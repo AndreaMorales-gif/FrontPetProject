@@ -1,11 +1,23 @@
-
 * {
   box-sizing: border-box;
 }
 
+/* .borde{
+  position: absolute;
+  right: 366px;
+  left: 366px;
+  margin: 45px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+} */
+
+.navbarColor {
+  background-color: #ff3535;
+}
 .bg-img {
   /* Imagen usada*/
-  background-image: url("fondo.png");
+  background-image: url("");
 
   height: 658px;
 
@@ -16,27 +28,25 @@
   position: relative;
 }
 
-/* El cuandro de registro*/
-.container {
-  position: absolute;
-  right: 250px;
-  left: 350px;
-  margin: 150px;
-  max-width: 300px;
-  padding: 16px;
-  background-color: white;
+.tableRegisters {
+  margin: auto;
+  width: 75%;
 }
 
 /* Todos los input*/
-input[type=text], input[type=password] {
+input[type="text"],
+input[type="date"],
+input[type="email"] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: #f0e3e3;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -44,15 +54,28 @@ input[type=text]:focus, input[type=password]:focus {
 /* Estilo de submit button */
 .btn {
   margin: 10px;
-  background-color: #55859c;
+  background-color: #707070;
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+  width: 95%;
+  opacity: 1;
 }
 
 .btn:hover {
-  opacity: 1;
+  opacity: 3;
+}
+
+.table {
+  background-color: #707070;
+  margin-top: 50px;
+}
+
+.colorTextWhite {
+  color: white;
+}
+
+.table1 {
+  background-color: #ffffff;
 }
