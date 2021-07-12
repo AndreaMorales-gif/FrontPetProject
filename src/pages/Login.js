@@ -19,7 +19,7 @@ export default function Login() {
     <div className="">
       <div className="">
         <div class="cardLogin">
-          <h1 className="padding-top" className="letra"> ¡BIENVENIDOS! </h1>
+          <h1 className="padding-top" className="letra"> ¡BIENVENIDO! </h1>
           <p class="title" className="letraLogin">
             Querido administrador, usted esta a punto de entrar a la aplicación
             de Control de Ingresos que le permitirá tener el registro de sus

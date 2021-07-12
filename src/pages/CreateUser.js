@@ -40,7 +40,7 @@ function CreateUser() {
 
   const save = () => {
     fetch(
-      `http://localhost:8080/api/saveUsers/${userId}/${name}/${fecha.toLocaleDateString(
+      ` https://controlingreso.herokuapp.com/api/saveUsers/${userId}/${name}/${fecha.toLocaleDateString(
         "es-ES",
         options
       )}/${email}`,
@@ -58,7 +58,7 @@ function CreateUser() {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch("http://localhost:8080/api/findUsers");
+    const data = await fetch(" https://controlingreso.herokuapp.com/api/findUsers");
     const users = await data.json();
 
     setUser(users);
@@ -182,7 +182,7 @@ function CreateUser() {
                         className="buttons btns buttonDelete "
                         onClick={() => {
                           fetch(
-                            `http://localhost:8080/api/deleteUsers/${item.id}`,
+                            ` https://controlingreso.herokuapp.com/api/deleteUsers/${item.id}`,
                             {
                               method: "DELETE",
                             }
@@ -205,7 +205,7 @@ function CreateUser() {
                           className=" buttonUpdate"
                           onClick={() => {
                             fetch(
-                              `http://localhost:8080/api/updateUsers/${item.id}`,
+                              ` https://controlingreso.herokuapp.com/api/updateUsers/${item.id}`,
                               {
                                 method: "PUT",
                               }

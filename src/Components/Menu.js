@@ -13,11 +13,7 @@ import { useHistory, Link } from "react-router-dom";
 export default function Menu() {
   const history = useHistory();
   const [user] = useAuthState(auth);
-  useEffect(() => {
-    if (!user) {
-      history.push("/");
-    }
-  }, [user, history]);
+
   return (
     <div className="menu  ">
       <nav class="navbar navbar-expand-lg navbar-dark navbarColor">
@@ -46,7 +42,7 @@ export default function Menu() {
               </li>
               <li class="nav-item" >
                 <Link class="nav-link " to={`/Register`}>
-                  Register
+                  Registro
                 </Link>
               </li>
               <li class="nav-item" >

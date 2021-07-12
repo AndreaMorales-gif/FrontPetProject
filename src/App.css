@@ -85,6 +85,7 @@ input[type="email"]:focus {
   opacity: 1;
 }
 
+
 /* Botón Borrar */
 .buttonDelete {
   background-color: rgb(243, 134, 119);
@@ -202,33 +203,29 @@ a:hover {
 
 
 /* Página Buscar */
-form.example input[type="text"] {
-  margin-top: 5%;
+.example input[type="text"] {
+  margin-top: 3%;
   padding: 15px;
   font-size: 17px;
   border: 1px solid #041442;
   width: 88%;
-  background: #f2fcffec;
 }
 
-form.example button {
-  width: 25%;
+
+.example {
+  margin: auto;
+  max-width: 500px;
+}
+
+/* Botón buscar */
+.botonBuscar{
+  width: 50%;
   padding: 8px;
   background: #11204d;
   color: white;
   font-size: 20px;
   border: 1px solid #000;
-  border-left: none;
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: #041442;
-}
-
-.example {
-  margin: auto;
-  max-width: 500px;
+  
 }
 
 /* carta buscar */

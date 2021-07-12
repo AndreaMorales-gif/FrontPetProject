@@ -65,7 +65,7 @@ function Register() {
 
   const save = () => {
     fetch(
-      `http://localhost:8080/api/saveRegisters/${uuidv4()}/${userId}/${fecha.toLocaleDateString(
+      ` https://controlingreso.herokuapp.com/api/saveRegisters/${uuidv4()}/${userId}/${fecha.toLocaleDateString(
         "es-ES",
         options
       )}`,
@@ -83,7 +83,7 @@ function Register() {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch("http://localhost:8080/api/findRegisters");
+    const data = await fetch(" https://controlingreso.herokuapp.com/api/findRegisters");
     const registers = await data.json();
 
     setRegister(registers);
@@ -91,7 +91,7 @@ function Register() {
 
   const validarIngreso = () => {
     axios
-      .get(`http://localhost:8080/api/validarIngreso/${userId}`)
+      .get(` https://controlingreso.herokuapp.com/api/validarIngreso/${userId}`)
       .then((response) => {
         setValidar(response.data);
       });
@@ -192,7 +192,7 @@ function Register() {
                         className="buttonDelete"
                         onClick={() => {
                           fetch(
-                            `http://localhost:8080/api/deleteRegisters/${item.id}`,
+                            ` https://controlingreso.herokuapp.com/api/deleteRegisters/${item.id}`,
                             {
                               method: "DELETE",
                             }

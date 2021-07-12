@@ -30,7 +30,7 @@ function UpdateUser() {
 
     const update = () => {
         fetch(
-          `http://localhost:8080/api/updateUsers/${userId}/${name}/${fecha.toLocaleDateString(
+          ` https://controlingreso.herokuapp.com/api/updateUsers/${userId}/${name}/${fecha.toLocaleDateString(
           "es-ES",
             options
            )}/${email}`,
