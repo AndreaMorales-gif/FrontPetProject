@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import Logo from "./menu.gif";
+import "../App.css";
 import {
   signingWithGoogle,
   auth,
@@ -7,12 +9,13 @@ import {
 import { useAuthState } from "react-firebase-hooks/auth";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useHistory, Link } from "react-router-dom";
+
 export default function Menu() {
   const history = useHistory();
   const [user] = useAuthState(auth);
   useEffect(() => {
     if (!user) {
-      history.push("/login");
+      history.push("/");
     }
   }, [user, history]);
   return (
@@ -20,7 +23,7 @@ export default function Menu() {
       <nav class="navbar navbar-expand-lg navbar-dark navbarColor">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            Control de ingresos
+            <img src={Logo} className="Logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -35,27 +38,22 @@ export default function Menu() {
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <Link class="nav-link " to={`/Home`}>
-                  Home
+              <li class="nav-item" >
+                {" "}
+                <Link class="nav-link" to={`/search`}>
+                  Control de Ingreso
                 </Link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" >
                 <Link class="nav-link " to={`/Register`}>
                   Register
                 </Link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" >
                 <Link class="nav-link " to={`/CreateUser`}>
-                  CrearUsuario
+                  Usuario
                 </Link>
               </li>
-            </ul>
-
-            <ul>
-              <button onClick={signOut} className="nav-item">
-                Salir
-              </button>
             </ul>
           </div>
         </div>

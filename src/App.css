@@ -1,36 +1,34 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .borde{
-  position: absolute;
-  right: 366px;
-  left: 366px;
-  margin: 45px;
-  max-width: 500px;
-  padding: 16px;
-  background-color: white;
-} */
-
+/* Menu */
 .navbarColor {
-  background-color: #ff3535;
-}
-.bg-img {
-  /* Imagen usada*/
-  background-image: url("");
-
-  height: 658px;
-
-  /* Posición de imagen de fondo */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-color: #088190;
+  padding-left: 7%;
 }
 
+/* Tablas */
 .tableRegisters {
   margin: auto;
   width: 75%;
+}
+.table {
+  background-color: #088190;
+  margin-top: 50px;
+}
+
+.colorTextWhite {
+  color: white;
+}
+
+.table1 {
+  background-color: #ffffff;
+}
+
+.tableSize {
+  width: 10000px;
 }
 
 /* Todos los input*/
@@ -41,20 +39,20 @@ input[type="email"] {
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f0e3e3;
+  background: #f2fcff;
 }
 
 input[type="text"]:focus,
 input[type="date"]:focus,
 input[type="email"]:focus {
-  background-color: #ddd;
+  background-color: #f2fcff;
   outline: none;
 }
 
 /* Estilo de submit button */
-.btn {
+.botonEnviar {
   margin: 10px;
-  background-color: #707070;
+  background-color: #11204d;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -67,15 +65,182 @@ input[type="email"]:focus {
   opacity: 3;
 }
 
-.table {
-  background-color: #707070;
-  margin-top: 50px;
+/* Estilos formularios */
+.title-form {
+  margin-top: 25px;
+  text-align: center;
+  font: size 3em;
 }
 
-.colorTextWhite {
+/* Botón para salir de firebase */
+.buttonOut {
+  margin: 0px;
   color: white;
+  position: absolute;
+  margin-top: 10px;
+  left: 88%;
+  border: none;
+  cursor: pointer;
+  width: 5%;
+  opacity: 1;
 }
 
-.table1 {
+/* Botón Borrar */
+.buttonDelete {
+  background-color: rgb(243, 134, 119);
+  width: 100px;
+  height: 35px;
+  color: white;
+  border: none;
+  border-radius: 8%;
+}
+
+/* Botón Update */
+.buttonUpdate {
+  background-color: #bad6d9;
+  width: 100px;
+  height: 35px;
+  color: white;
+  border: none;
+  border-radius: 8%;
+}
+
+/* Carta Login */
+.cardLogin {
+  border-radius: 6px;
+  box-shadow: 0 5px 10px 0 rgba(27, 27, 27, 0.616);
+  max-width: 500px;
+  padding: 12px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
   background-color: #ffffff;
+  margin-top: 100px;
+}
+
+.buttonGoogle {
+  max-width: 140px;
+  background-color: #088190;
+  border-radius: 5%;
+}
+.padding-top {
+  padding-top: 10px;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+.containerCard {
+  margin: 24px 0;
+}
+
+.titleCard {
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 105px;
+}
+
+.imagePerfil {
+  margin-top: 100px;
+  margin-left: 250px;
+  border-radius: 50%;
+  width: 130px;
+}
+
+.name {
+  padding-top: 8px;
+  margin-left: 238px;
+  font-family: "Cardo", serif;
+  font-size: 1.5em;
+}
+
+/* letras */
+.letra {
+  font-family: "Cardo", serif;
+  margin-top: 8px;
+}
+
+.letraTabla {
+  font-family: "Cardo", serif;
+  margin-top: 8px;
+  font-size: 1.2em;
+}
+
+
+.letraLogin{
+  font-family:'Noto Sans TC', sans-serif;
+  font-size: 1.3em;
+  color:rgba(48, 44, 44, 0.993);
+  text-align: center;
+}
+
+
+/* Página Buscar */
+form.example input[type="text"] {
+  margin-top: 5%;
+  padding: 15px;
+  font-size: 17px;
+  border: 1px solid #041442;
+  width: 88%;
+  background: #f2fcffec;
+}
+
+form.example button {
+  width: 25%;
+  padding: 8px;
+  background: #11204d;
+  color: white;
+  font-size: 20px;
+  border: 1px solid #000;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #041442;
+}
+
+.example {
+  margin: auto;
+  max-width: 500px;
+}
+
+/* carta buscar */
+.cardSearch{
+  width: 40%;
+  height: 30%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+/* logo google */
+.logoGoogle{
+  width: 6%;
+  height: 6%;
 }
